@@ -11,7 +11,7 @@
         android:layout_width="166dp"
         android:layout_height="64dp"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="14dp"
+        android:layout_marginTop="35dp"
         android:hint="IP"
         app:layout_constraintEnd_toStartOf="@+id/puerto_input_text"
         app:layout_constraintStart_toStartOf="parent"
@@ -28,10 +28,10 @@
         android:layout_width="102dp"
         android:layout_height="64dp"
         android:layout_marginStart="5dp"
-        android:layout_marginTop="14dp"
+        android:layout_marginTop="35dp"
         android:layout_marginEnd="5dp"
         android:hint="PUERTO"
-        app:layout_constraintEnd_toStartOf="@+id/button"
+        app:layout_constraintEnd_toStartOf="@+id/connectButton"
         app:layout_constraintStart_toEndOf="@+id/ip_input_text"
         app:layout_constraintTop_toTopOf="parent"
         app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.MyApp.TextInputLayout.Rounded">
@@ -42,16 +42,20 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/connectButton"
         android:layout_width="wrap_content"
         android:layout_height="64dp"
         android:layout_marginStart="5dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="35dp"
         android:layout_marginEnd="20dp"
         android:backgroundTint="@color/black"
         android:text="Conn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/puerto_input_text"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
